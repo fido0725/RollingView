@@ -16,6 +16,11 @@
 		B53DD71E268A38830062974E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DD71D268A38830062974E /* main.m */; };
 		B53DD728268A38830062974E /* XIBdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DD727268A38830062974E /* XIBdemoTests.m */; };
 		B53DD733268A38830062974E /* XIBdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DD732268A38830062974E /* XIBdemoUITests.m */; };
+		B53DD743268A38A60062974E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B53DD741268A38A60062974E /* TableViewCell.m */; };
+		B53DD744268A38A60062974E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53DD742268A38A60062974E /* TableViewCell.xib */; };
+		B5D47AA9269CA79A005B3B50 /* RollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5D47AA8269CA79A005B3B50 /* RollingView.m */; };
+		B5D47AAB269CA7AD005B3B50 /* RollingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D47AAA269CA7AD005B3B50 /* RollingView.xib */; };
+		B5D47AAE269CB2EE005B3B50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D47AAD269CB2EE005B3B50 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,13 @@
 		B53DD72E268A38830062974E /* XIBdemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XIBdemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53DD732268A38830062974E /* XIBdemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XIBdemoUITests.m; sourceTree = "<group>"; };
 		B53DD734268A38830062974E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B53DD740268A38A60062974E /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		B53DD741268A38A60062974E /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		B53DD742268A38A60062974E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		B5D47AA7269CA79A005B3B50 /* RollingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RollingView.h; sourceTree = "<group>"; };
+		B5D47AA8269CA79A005B3B50 /* RollingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RollingView.m; sourceTree = "<group>"; };
+		B5D47AAA269CA7AD005B3B50 /* RollingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollingView.xib; sourceTree = "<group>"; };
+		B5D47AAD269CB2EE005B3B50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D47AAE269CB2EE005B3B50 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +101,7 @@
 				B53DD726268A38830062974E /* XIBdemoTests */,
 				B53DD731268A38830062974E /* XIBdemoUITests */,
 				B53DD709268A38820062974E /* Products */,
+				B5D47AAC269CB2EE005B3B50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,7 +124,13 @@
 				B53DD70F268A38820062974E /* SceneDelegate.m */,
 				B53DD711268A38820062974E /* ViewController.h */,
 				B53DD712268A38820062974E /* ViewController.m */,
+				B5D47AA7269CA79A005B3B50 /* RollingView.h */,
+				B5D47AA8269CA79A005B3B50 /* RollingView.m */,
+				B5D47AAA269CA7AD005B3B50 /* RollingView.xib */,
 				B53DD714268A38820062974E /* Main.storyboard */,
+				B53DD740268A38A60062974E /* TableViewCell.h */,
+				B53DD741268A38A60062974E /* TableViewCell.m */,
+				B53DD742268A38A60062974E /* TableViewCell.xib */,
 				B53DD717268A38830062974E /* Assets.xcassets */,
 				B53DD719268A38830062974E /* LaunchScreen.storyboard */,
 				B53DD71C268A38830062974E /* Info.plist */,
@@ -135,6 +155,14 @@
 				B53DD734268A38830062974E /* Info.plist */,
 			);
 			path = XIBdemoUITests;
+			sourceTree = "<group>";
+		};
+		B5D47AAC269CB2EE005B3B50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5D47AAD269CB2EE005B3B50 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D47AAB269CA7AD005B3B50 /* RollingView.xib in Resources */,
 				B53DD71B268A38830062974E /* LaunchScreen.storyboard in Resources */,
+				B53DD744268A38A60062974E /* TableViewCell.xib in Resources */,
 				B53DD718268A38830062974E /* Assets.xcassets in Resources */,
 				B53DD716268A38820062974E /* Main.storyboard in Resources */,
 			);
@@ -269,6 +299,8 @@
 				B53DD713268A38820062974E /* ViewController.m in Sources */,
 				B53DD70D268A38820062974E /* AppDelegate.m in Sources */,
 				B53DD71E268A38830062974E /* main.m in Sources */,
+				B53DD743268A38A60062974E /* TableViewCell.m in Sources */,
+				B5D47AA9269CA79A005B3B50 /* RollingView.m in Sources */,
 				B53DD710268A38820062974E /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
